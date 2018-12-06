@@ -11,8 +11,8 @@ This repository contains contract for BobsRepair Buyback program, version 2 vari
 * If you want to add more tokens to a deposit, it is counted as a new deposit with it's own deposit time. Desired sell price is common for all deposits.
 
 ## Technical notes
-* For selecting winners we use a hash of a block, previous to start current round tx, as a source of randomness.
 * Buyback process consists of 2 or more transactions:
 	1. Setup Buyback round tx, which contains ETH transfer requires for buyback and sets required variables, including random hash of previous block. Previous block is used because current block hash is not available at the time of processing transaction. After this transaction winners are actually selected.
 	2. One or more (if one requires too much gas) tx which sends ETH to winners. Last transaction also closes buyback round.
 * During buyback round deposits and withdraws are paused
+* For selecting winners we use a hash of a block, previous to Setup Buyback round tx, as a source of randomness.
