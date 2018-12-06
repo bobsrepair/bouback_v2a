@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {
+  padding: 20px;
+}
+#options td {
+  width: 100%!important;
+}
+
+#clockdiv div{
+  display: inline-block;
+
+}
+
+.smalltext {
+  margin: 0px 10px 0px 5px;
+}
+
+#clockdiv{
+  padding-bottom: 10px;
+}
+.error {
+  color: red;
+}
+input.ethTx,
+input.ethAddress {
+  width: 30em;
+}
+input:read-only,
+textarea:read-only {
+  background-color: #f2f2f2;
+}
+.abi {
+  display: block;
+  width: 100%;
+  height: 3em;
+}
+label {
+  margin: 20px 0 0 0;
+  display: block;
+}
+table tbody tr td:first-of-type {
+  width: 200px;
+}
+span.ethAddress,
+span.ethTx {
+  background-color: #e0e0e0;
+  font-family: monospace;
+}
+#loadingUser {
+  display: none;
+}
+.loader {
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect {
+  fill: #ff6700;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  padding: 0;
+  max-width: 800px;
+  margin: 100px auto;
+}
+body:before {
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 200px;
+  background: url(https://bobsrepair.com/img/background-up.svg) bottom center repeat-x;
+  top: 0;
+  background-size: 900px;
+  position: fixed;
+  z-index: -1;
+}
+body:after {
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 200px;
+  background: url(https://bobsrepair.com/img/background-up.svg) top center repeat-x;
+  bottom: 0;
+  background-size: 900px;
+  position: fixed;
+  z-index: -1;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 100;
+  line-height: 40px;
+  text-align: center;
+  color: #ffae00;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0469d6;
+}
+#loadContractsForm input:read-only,
+#loadContractsForm textarea:read-only {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  border: solid 1px #999;
+  margin: 10px 0 30px;
+  max-width: 760px;
+  padding: 5px;
+  height: 27px;
+}
+.metamaskNotAvailable li {
+  margin: 0 0 10px;
+}
+.metamaskNotAvailable a {
+  color: #ffae00;
+  font-weight: 500;
+}
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #999;
+}
+input#executeExchangeBtn {
+  color: #ffae00;
+  border-color: #ffae00;
+  background: transparent;
+  border-radius: 5px;
+  margin: 20px 0;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px 30px;
+  line-height: 23px;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+}
+input#executeExchangeBtn:hover {
+  color: white;
+  background: #ffae00;
+}
+#checkForm div:last-of-type {
+  margin: 20px 0 0 0;
+}
+#checkForm div:last-of-type span {
+  color: #ffae00;
+}
+#checkForm table {
+  margin: 20px 0 0 0;
+}
+#checkForm table tr td:first-of-type {
+  width: 180px;
+}
+#checkForm label input {
+  margin: 0 0 0 80px;
+  width: 40%;
+}
+tr,
+#publishContractForm div,
+#manageBuyback div {
+  margin: 0px 0 5px;
+  display: block;
+}
+table,
+tr,
+td {
+  border-spacing: 0;
+}
+#options thead {
+  padding-bottom: 15px;
+}
+#options td {
+  padding-bottom: 15px;
+}
+#options .cont {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+#options th {
+  height: 65px;
+}

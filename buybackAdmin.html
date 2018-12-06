@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOB Buyback v2a Admin</title>
+    <meta charset="UTF-8">
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="web3_v1_0.min.js"></script>
+    <script type="text/javascript" src="buybackAdmin.js"></script>
+    <link rel="stylesheet" href="style.css" type='text/css'/>
+</head>
+<body>
+<h1>BOB Buyback v2a Admin</h1>
+<div>
+    <span style="margin-right: 50px;">Current time: <input type="text" id="clock" name="clock" value="" readonly class="time"> (Z = UTC timezone, ISO8601 format)</span>
+    <span>Ethereum price: 1 ETH = <span id="ethereumPrice">...</span> USD</span>
+</div>
+
+<div class="error" id="errormsg"></div>
+<h2>0. Load contracts</h2>
+<form id="loadContractsForm">
+    <label>Token ABI:
+        <textarea id="tokenABI" readonly class="abi"></textarea>
+    </label>
+    <label>Buyback ABI:
+        <textarea id="buybackABI" readonly  class="abi"></textarea>
+    </label>
+</form>
+
+<h2>1. Publish Buyback</h2>
+<form id="publishContractForm">
+    <div>Token address: <input type="text" name="token" value="" class="ethAddress"></div>
+    <div><input type="button" id="publishBuyback" value="Publish Buyback"></div>
+    <div><label>Transaction: <input type="text" readonly name="publishedTx" value="" class="ethTx"></label></div>
+    <div><label>Buyback Contract Published at: <input type="text" readonly name="publishedAddress" value="" class="ethAddress"></label></div>
+</form>
+
+<h2>2. Manage Buyback</h2>
+<form id="manageBuyback">
+    <div>
+        <label>Buyback at: <input type="text" name="buybackAddress" value="" class="ethAddress">
+        </label><input type="button" id="loadInfo" value="Load info">
+    </div>
+    <table>
+        <tr><td>Token address:</td><td><input type="text" name="tokenAddress" readonly value="" class="ethAddress"></td></tr>
+        <tr><td>BOB Balance:</td><td><input type="number" name="bobBalance" readonly value="" class="number"> BOB</td></tr>
+        <tr><td>Ether Balance:</td><td><input type="number" name="ethBalance" readonly value="" class="number"> ETH</td></tr>
+    </table>
+
+    <h3>Execute Buyback round</h3>
+
+    <h3>Claim collected tokens</h3>
+    <div><input type="button" id="claimTokens" value="Claim tokens"></div>
+    <div><label>Transaction: <input type="text" readonly name="publishedClaimTokensTx" value="" class="ethTx"></label></div>
+
+
+</form>
+
+
+
+</body>
+</html>
